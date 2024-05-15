@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Specialists</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?familcloudflarey=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs..com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    crossorigin="anonymous">
+    
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand img.logo {
+      max-height: 50px;
+      margin-left: 15px;
+    }
+    .logo{
+        border-radius: 50%;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .main-image {
+  background: url('img_bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 600px; /* Increased height */
+  position: relative; /* Add position relative for overlay */
+}
+
+/* Overlay styles */
+.main-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+
+.text-container_1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 100%; /* Ensure text is centered horizontally */
+  padding: 0 20px; /* Add padding for better readability */
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 1; /* Ensure content is on top of overlay */
+}
+
+.text-container_1 h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.25rem;
+}
+.btn_main{
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    
+}
+.btn_main:hover{
+    padding: 15px 8px 15px 8px;
+    transition: padding 0.4s ease;
+    font-size: 1.2em;
+    transition: font-size 0.4s ease;
+    
+}
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+    .card img{
+        display: block;
+         width: 100%; /* Adjust as needed */
+        height: 200px; /* Adjust as needed */
+         object-fit: cover; /* Ensure the image covers the entire area */
+        overflow: hidden;
+    }
+    .btn-primary {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-primary:hover {
+      background-color: #c82333;
+      border-color: #bd2130;
+    }
+
+    .footer {
+      background-color: #212529;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer .social-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .text-danger-emphasis {
+      color: #dc3545;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Themes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div class="main-image">
+    <div class="text-container_1">
+      <h1 class="display-4">Celebrate Your Events<br>That Lasts Longer</h1>
+      <p class="lead">Furniture Designers</p>
+      <button class="btn_main">Find out more</button>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="container mt-5">
+    <h5 class="text-danger-emphasis">Categories</h5>
+    <h2 class="mb-5">Dining Table</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_din_1.jpg" class="card-img-top new_top" alt="Category 1">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_dine.jpg" class="card-img-top" alt="Category 2">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_dine2.jpg" class="card-img-top" alt="Category 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Weddings -->
+  <div class="container mt-5">
+    <h2 class="mb-5">Chairs</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_chair.jpg" class="card-img-top" alt="Wedding 1">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_chair1.jpg" class="card-img-top" alt="Wedding 2">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img_laychair.jpg" class="card-img-top" alt="Wedding 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customized Theme -->
+  <div class="container-fluid theme-section mt-5">
+    <div class="container">
+      
+    </div>
+  </div>
+
+  <!-- Vendor of the Month -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="img_bed.jpg" class="img-fluid rounded-start" alt="Vendor">
+        </div>
+        <div class="col-md-7">
+          <div class="card-body">
+            <h5 class="card-title">Tarkhan Of The Month</h5>
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h6 class="card-text">Design as You Wish</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+<video src="vedio_1.mp4" autoplay controls height="3%" width="100%"></video>
+
+  <!-- Our Backbone - Meet our Vendors -->
+  <div class="container mt-5">
+    <h5 class="text-danger-emphasis">Our Backbone</h5>
+    <h2 class="mb-5">Meet Our Management</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="ca rd">
+          <img src="vendor_1.jpg" class="card-img-top" alt="Vendor 1">
+          <div class="card-body">
+            <h5 class="card-title">Person 1</h5>
+            <p class="card-text">Expert at Company</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="vendor_2.jpg" class="card-img-top" alt="Vendor 2">
+          <div class="card-body">
+            <h5 class="card-title">Person 2</h5>
+            <p class="card-text">Expert at Company</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="vendor_3.jpg" class="card-img-top" alt="Vendor 3">
+          <div class="card-body">
+            <h5 class="card-title">Person 3</h5>
+            <p class="card-text">Expert at Company</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+      <p class="mt-3">&copy; 2024 Muhammad Tayyab Mansha. Trendy Home Furniture. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
